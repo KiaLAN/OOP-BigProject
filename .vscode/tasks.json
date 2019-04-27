@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "debug",
+            "command": "make",
+        },
+        {
+            "label": "build",
+            "command": "make",
+        },
+        {
+            "label": "draft",
+            "command": "make",
+            "args": [
+                "debug",
+                "TAR=draft"                
+                // "TAR=${workspaceFolder}/${fileBasenameNoExtension}"
+            ]
+        }
+    ]
+}
